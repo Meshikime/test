@@ -65,19 +65,29 @@
  // (k==50) ? console.log(k) : console.log("Wrong");
 
  // Игра угадай число
- let i = 50;
- let k = +prompt("Угадай число", " ");
- switch (true) {
-     case k < i:
-         alert("Слишком мало");
-         break;
-     case k > i:
-         alert("Слишком много");
-         break;
-     case i:
-         alert("Верно!");
-         break;
-     default:
-         alert("Что-то пошло не так");
-         break;
- }
+//  let i = 50;
+//  let k = +prompt("Угадай число", " ");
+//  switch (true) {
+//      case k < i:
+//          alert("Слишком мало");
+//          break;
+//      case k > i:
+//          alert("Слишком много");
+//          break;
+//      case i:
+//          alert("Верно!");
+//          break;
+//      default:
+//          alert("Что-то пошло не так");
+//          break;
+//  }
+// let num=50;
+// while (num<55) {
+//     console.log(num);
+//     num++;
+    
+// }
+// let a = [1, 2, 3], b = [1, 2, 3];
+console.log( 0 || "" || 2 || undefined || true || falsе );
+// let y = 1; let x = y = 2; alert(x)
+// alert( +"Infinity" );
