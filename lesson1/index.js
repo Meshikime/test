@@ -45,6 +45,9 @@ do {
             console.log("done");
             appData.expenses[a] = b;
         }
+        else {
+            i--;
+        }
 i++;
 } while (i<2);
 
@@ -60,3 +63,8 @@ if (appData.moneyPerDay < 100) {
 } else {
     console.log("Произошла ошибка");
 };
+
+
+
+
+
