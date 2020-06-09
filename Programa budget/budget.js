@@ -19,12 +19,15 @@ for (let i = 0; i < 2; i++) {
         console.log("done");
         appData.expenses[a] = b;
     } else {
-
+        i--;
     }
-
-
-appData.moneyPerDay = appData.бюджет / 30;
+}
+function detectDayBudget() {
+ return appData.moneyPerDay = appData.бюджет / 30;
 alert("Ежедненый бюджет: " + appData.moneyPerDay);
+}
+detectDayBudget();
+function detectLevel(){
 if (appData.moneyPerDay < 100) {
     console.log("Минимальный уровень достатка")
 } else if (appData.moneyPerDay > 100 && appData.moneyPerDay < 2000) {
@@ -34,3 +37,19 @@ if (appData.moneyPerDay < 100) {
 } else {
     console.log("Произошла ошибка");
 };
+}
+detectLevel();
+ 
+function chooseOptExpenses(){
+    let question;
+    for (let i = 0; i < 3; i++) {
+        question = prompt('Статья необязательных расходов? ', '');
+    }
+    if (typeof (question) === 'string' && typeof (question) != null && question.length < 50) {
+    console.log("done");
+    let optionalExpenses  = {
+        i: question,
+    }
+}
+}
+chooseOptExpenses();
